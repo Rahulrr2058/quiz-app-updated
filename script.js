@@ -19,7 +19,9 @@ async function fetchQuestion(difficulty) {
 }
 
 async function start(difficulty) {
+  document.getElementById("loading").style.display = "block";
   await fetchQuestion(difficulty);
+  document.getElementById("loading").style.display = "none";
   questionIndex = 0;
   score = 0;
   document.getElementById("difficulty").style.display = "none";
@@ -27,7 +29,7 @@ async function start(difficulty) {
 }
 function showQuestion() {
   const givenQuestion = questions[questionIndex];
-  const showedquestion = givenQuestion.question;
+  const showedquestion = decodeHTML(givenQuestion.question);
   document.getElementById("question").innerText = showedquestion;
 
   const optionsDiv = document.getElementById("options");
@@ -62,10 +64,13 @@ function revealAnswer() {
   Array.from(document.getElementById("options").children).forEach((answer) => {
     if (answer.textContent === decodeHTML(givenQuestion.correct_answer)) {
       answer.classList.add("correct");
-    } else {
+    } else if (selectedOption === answer.textContent) {
       answer.classList.add("incorrect");
     }
   });
+  if (selectedOption === givenQuestion.correct_answer) {
+    alert("correct!!");
+  }
 }
 
 function submitAnswer() {

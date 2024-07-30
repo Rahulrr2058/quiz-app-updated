@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz Application</title>
-    <link rel="stylesheet" href="style.css" >
-</head>
+    <link rel="stylesheet" href="style.css" />
+    </head>
+
 <body>
     <div class="container">
-        
     <div class="difficulty" id="difficulty">
         <h1 class="difficulty-heading">Choose difficulty</h1>
+        <div class="difficulty-button">
         <button class="easy-button" onclick="start('easy')">Easy</button>
-        <button class="medium-button" onclick="start('medium')">Medium</button>
+        <button class="medium-button" onclick="start('medium')">
+            Medium
+        </button>
         <button class="hard-button" onclick="start('hard')">Hard</button>
-    </div>
-    <div id="quiz" style="display: none;">
+        </div>
+        <div id="loading" style="display: none">Loading...</div>
+        </div>
+        <div id="quiz" style="display: none">
         <div class="question" id="question"></div>
-        <div class="options "id = "options"></div>
-        <button class="next-button"  onclick="submitAnswer()">Next</button>
+        <div class="options" id="options"></div>
+        <button class="next-button" onclick="submitAnswer()">Next</button>
+        </div>
+    <div id="result" style="display: none">
+        <h1>Total Score : <span id="score"></span></h1>
+        <button class="play-again" onclick="playAgain()">Play Again</button>
     </div>
-    <div id ="result" style="display: none;">
-    <h1> Total Score : <span id = "score"></span></h1>
-    <button onclick="playAgain()" >Play Again</button>
     </div>
-    
-</div>
     <script src="script.js"></script>
 </body>
 </html>

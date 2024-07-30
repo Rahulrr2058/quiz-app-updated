@@ -1,97 +1,134 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Lucida Handwriting", sans-serif;
     text-align: center;
     margin-top: 100px;
     padding: 0;
 }
 .container{
+    position: sticky;
+        font-family: "Lucida Handwriting", Times, serif;
     height: 450px;
     width: 700px;
-    background-color:beige;
-    margin-left: 500px; 
+    background-color: aliceblue;
+        margin-left: 500px;
     border-radius: 20px;
+    box-shadow: 10px 10px 5px lightblue;
+    }
+    
+    button {
+        padding: 10px 20px;
+        margin: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px 20px 5px;
+        background-color: aliceblue;
 }
 h1{
     text-align: center;
-    line-height: 100px;
-    font-size: 40px;
-    color:black
+    line-height: 250px;
+        font-size: 50px;
+        color: olive
+    }
 
+.difficulty-button {
+    display: flex;
+    justify-content: space-around;
 }
 .difficulty button{
+    font-family: "Lucida Handwriting", Times, serif;
     border: none;
-    border-radius: 20%;
+    border-radius: 5px 20px 5px;
+        font-size: 30px;
+        color: olive;
 
 }
 .easy-button:hover{
     color: aliceblue;
     background-color: green;
-    border: 3px solid gold;
+    border: 3px solid white;
 }
 .medium-button:hover{
     color: aliceblue;
     background-color: blue;
-    border: 3px solid gold;
+    border: 3px solid white;
 }
 .hard-button:hover{
     color: aliceblue;
     background-color: red;
-    border: 3px solid gold;
-    
+    border: 3px solid white;
 
 }
-button {
-    padding: 10px 20px;
-    margin: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    border-radius: 20%;
+#loading {
+    color: olive;
+    margin-top: 10px;
+    size: 20px;
 }
+
+.question {
+    padding-top: 25px;
+    margin-left: 10px;
+    text-align: center;
+        color: olive;
+        font-size: 20px;
+    
+    }
 
 .options {
     margin: 20px 0;
-}
-.question {
-    display: flex;
-    line-height: 50px;
-    margin-left: 10px;
-
 }
 .options button {
     display: block;
     width: 50%;
     margin: 10px auto;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 5px 20px 5px;
     border: none;
+    font-family: "Lucida Handwriting", sans-serif;
+        font-size: 20px;
+        color: rgba(68, 67, 67, 0.93);
 
 }
 .options button:hover{
+    color: white;
     background-color: green;
-    border: gold solid 2px;
+    border: white solid 3px;
 }
 .highlight{
     background-color: green;
     color: aliceblue;
+    border: 2px solid #000;
     
+}
+.next-button {
+    color: olive;
+    font-family: "Lucida Handwriting", sans-serif;
+    font-size: 30px;
 }
 
 .next-button:hover{
-    background-color: green;
+    background-color: purple;
     color: white;
-    border: 3px solid gold;
+    border: 3px solid white;
 
 }
 
 button.correct{
     background-color: green;
+    color: aliceblue;
 }
 
 button.incorrect{
     background-color: red;
+    color: aliceblue;
 }
 
 button.highlight{
-    border: 2px solid #000
+    border: 2px solid #000;
+    }
+    
+    .play-again {
+        color: olive;
+        font-family: "Lucida Handwriting", sans-serif;
+        font-size: 30px;
 }
