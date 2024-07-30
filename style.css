@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    padding: 0;
+}
+.container{
+    height: 450px;
+    width: 700px;
+    background-color:beige;
+    margin-left: 500px; 
+    border-radius: 20px;
+}
+h1{
+    text-align: center;
+    line-height: 100px;
+    font-size: 40px;
+    color:black
+
+}
+.difficulty button{
+    border: none;
+    border-radius: 20%;
+
+}
+.easy-button:hover{
+    color: aliceblue;
+    background-color: green;
+    border: 3px solid gold;
+}
+.medium-button:hover{
+    color: aliceblue;
+    background-color: blue;
+    border: 3px solid gold;
+}
+.hard-button:hover{
+    color: aliceblue;
+    background-color: red;
+    border: 3px solid gold;
+    
+
+}
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20%;
+}
+
+.options {
+    margin: 20px 0;
+}
+.question {
+    display: flex;
+    line-height: 50px;
+    margin-left: 10px;
+
+}
+.options button {
+    display: block;
+    width: 50%;
+    margin: 10px auto;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+
+}
+.options button:hover{
+    background-color: green;
+    border: gold solid 2px;
+}
+.highlight{
+    background-color: green;
+    color: aliceblue;
+    
+}
+
+.next-button:hover{
+    background-color: green;
+    color: white;
+    border: 3px solid gold;
+
+}
+
+button.correct{
+    background-color: green;
+}
+
+button.incorrect{
+    background-color: red;
+}
+
+button.highlight{
+    border: 2px solid #000
+}
